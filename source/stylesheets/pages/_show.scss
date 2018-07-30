@@ -15,13 +15,13 @@
   padding: 40px;
   color: $gray;
   text-align: center;
+  img {
+    width: 80px;
+  }
 }
 
 .desc {
   padding: 40px;
   color: $black;
-}
-
-.important {
-  padding: 20px;
+  flex-grow: 3;
 }

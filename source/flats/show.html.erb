@@ -1,0 +1,35 @@
+
+<% flat = data.flats[owner] %>
+
+
+
+
+
+
+<div class="banner" style="background-image: url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
+</div>
+
+<div class="container">
+  <div class="flat-info">
+    <div class="owner">
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle", width: "100px" %>
+      <h3><%= owner %></h3>
+    </div>
+    <div class="name">
+      <h3><%= flat.name %></h3>
+      <h4><%= flat.city_name %></h4>
+    </div>
+    <div class="important">
+      <p>Distance from closest pub: <%= flat.distance_from_pub %>km</p>
+    </div>
+    <div class="desc">
+      <p><%= flat.description %></p>
+      <ul class="list-inline">
+      <% flat.rating.times do %>
+        <li><i class="fa fa-star"></i></li>
+      <% end %>
+      </ul>
+    </div>
+    <a class="btn btn-primary" href="#">Book Now</a>
+  </div>
+</div>

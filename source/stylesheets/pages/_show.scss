@@ -1,0 +1,27 @@
+
+.flat-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  background-color: $white;
+  border-radius: 5px;
+  a {
+    margin-right: 15px;
+  }
+}
+
+.owner {
+  padding: 40px;
+  color: $gray;
+  text-align: center;
+}
+
+.desc {
+  padding: 40px;
+  color: $black;
+}
+
+.important {
+  padding: 20px;
+}
